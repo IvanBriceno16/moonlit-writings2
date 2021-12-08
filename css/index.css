@@ -232,7 +232,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
   position: relative;
   overflow: hidden; 
   z-index: 2; 
-  background-image: url("images/roman.png");
+  background-image: url("/images/roman.png");
   background-size: cover;
   background-position: center;
 }
@@ -361,10 +361,10 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
   }
   .blog {
     background-image: 
-      url(images/instanbul.jpeg),
+      url(/images/nightsky.jpeg),
       radial-gradient( rgb(49, 49, 49), #111);
     background-blend-mode: multiply;
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center center;
