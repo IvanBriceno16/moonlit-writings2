@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="mw-home3.js"></script>
+    <title>Mock #4</title>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  </head>
+
+<body>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <a href="#"><div class="logo">MW</div></a>
+    <ul class="links">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Essays</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+
+  <section class="intro">
+    <div class="container">
+      <p class="primary-title">Hello.</p>
+      <p class="primary-text1">You know what I love?</p>
+      <p class="primary-text">- History and Philosphy.</p>
+      <p class="primary-text1">You know what I hate?</p>
+      <p class="primary-text">- Clunky textbooks with boring jargon that makes me question if my coffee was decafe.</p>
+
+    <p class="primary-text2">I enjoy learning about the past and the ideas that have shaped today.</p>
+    <p class="primary-text3">I've found that not all old men with white beards are boring.</p>
+    </div>
+  </section>
+
+  <section class="overlay">
+    <div class="smooth-scroll-wrapper">
+      <div class="content">
+        <div class="container2">
+          <div class="image-container">
+            <h2 class="text text-dark">
+              <div class="parallax-title">
+                The Unexamined Life is Not worth living
+              </div>
+            </h2>
+          </div>
+          <h2 class="text">
+            <div class="parallax-title">
+              The Unexamined Life is Not worth living 
+            </div>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let atScroll = false;
+      let parallaxTitle = document.querySelectorAll(".parallax-title");
+      
+      const scrollProgress = () => {
+          atScroll = true;
+      };
+      
+      const raf = () => {
+          if(atScroll) {
+              parallaxTitle.forEach((element, index) => {
+                  element.style.transform = "translateX(" + window.scrollY / 8 + "%)";
+              });
+              atScroll = false;
+          }
+          requestAnimationFrame(raf);
+      };
+      
+      requestAnimationFrame(raf);
+      window.addEventListener("scroll", scrollProgress);
+      </script>
+
+    
+    
+  </section>
+
+    <main>
+      <section class="featured">
+        <div class="container">
+          <h2 class="section-title">We'll be discussing topics such as...</h2>
+          <div class="split">
+            <a href="#" class="featured__item">
+              <img src="images/pantheon.jpeg" alt="pantheon" class="featured__img">
+              <p class="featured__details">Philosophy</p>
+            </a>
+            <a href="#" class="featured__item">
+              <img src="images/literature.jpeg" alt="" class="featured__img">
+              <p class="featured__details">Literature</p>
+            </a>
+            <a href="#" class="featured__item">
+              <img src="images/liberty.jpg" alt="" class="featured__img">
+              <p class="featured__details">History</p>
+            </a>
+            <a href="#" class="featured__item">
+              <img src="images/monet.jpeg" alt="" class="featured__img">
+              <p class="featured__details">Art</p>
+            </a>
+            <a href="#" class="featured__item">
+              <img src="images/world.jpeg" alt="" class="featured__img">
+              <p class="featured__details">World Politics</p>
+            </a>
+            <a href="#" class="featured__item">
+              <img src="images/map.jpeg" alt="" class="featured__img">
+              <p class="featured__details">Cultures</p>
+            </a>
+          </div>
+        </div>
+      </section>
+ 
+
+      <section class="our-topics">
+        <div class="container">
+          <h2 class="section-title2">Some of my favorite writers</h2>
+
+          <article class="product spacing">
+            <img src="images/cioran3.png" alt="" class="product__image">
+            <h3 class="product__title">Emil Cioran</h3>
+            <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quidem eos aut temporibus obcaecati qui voluptatibus dolore perferendis mollitia rem. Quasi unde dolorem iure numquam!</p>
+          </article>
+
+          <article class="product spacing">
+            <img src="images/marcuse2.png" alt="" class="product__image">
+            <h3 class="product__title">Herbet Marcuse</h3>
+            <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quidem eos aut temporibus obcaecati qui voluptatibus dolore perferendis mollitia rem. Quasi unde dolorem iure numquam!</p>
+          </article>
+
+          <article class="product spacing">
+            <img src="images/plato.png" alt="" class="product__image">
+            <h3 class="product__title">Plato</h3>
+            <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quidem eos aut temporibus obcaecati qui voluptatibus dolore perferendis mollitia rem. Quasi unde dolorem iure numquam!</p>
+          </article>
+
+        </div>
+      </section>
+      <div class="text2">
+      <p>"The most important attitude that can be formed is that of a desire to go on learning" - John Dewey
+      </p>
+      </div>
+      <section class="blog">
+        <div class="container">
+          <h2 class=section-title>Check out my blog</h2>
+
+          <div class="blog__box spacing">
+            <p class="blog__details">
+              In my blog, I'll be giving useful tips that I've been learning when it comes to writing and reading
+              I'll also be writing about random thoughts that pop up into my head. I don't know they're kinda weird. 
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  </html>
+    
+
+  
