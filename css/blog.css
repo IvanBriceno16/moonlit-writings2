@@ -1,16 +1,19 @@
 
 :root {
-  --primary-clr: rgb(5, 37, 6);
-  --color2: rgb(248, 125, 125);
+  --primary-clr: rgb(17, 17, 17);
+  --color2: rgb(41, 41, 41);
   --color3: white;
-  --color4: rgb(49, 0, 0);
+  --color4: rgb(243, 171, 171);
 }
 
 body {
-  margin: 0;
-  line-height: 1.6;
   background: var(--primary-clr);
   font-family: 'Libre Baskerville', serif;
+  font-size: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
   nav {
@@ -51,7 +54,7 @@ nav .links {
 nav .links li {
   list-style: none;
   border-radius: 10%;
-  background:-webkit-linear-gradient(transparent 50%, var(--color2));
+  background:-webkit-linear-gradient(transparent 50%, var(--color4));
   background-size: 200px 160px;
   align-items: center; 
   transition: 0.4s;
@@ -133,78 +136,80 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
   }
 }
 
- .about {
-  position: relative;
-  margin-top: 5rem;
-  color: white;
-  text-align: center;
-  padding: 10em 0;
-  background-image: 
-    url(../images/swiss.jpeg),
-    radial-gradient( rgb(95, 95, 95), #111);
-    background-blend-mode: multiply;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  max-height: 30vh;
-  }
-  
- .container {
-   width: 100%;
-   margin: 0 auto;
-   max-width: 65em;
-   margin-top: 5rem;
- }
-
- .primary-title {
-   color: white;
-   font-size: 6rem;
- }
-
- .secondary-text {
-   margin: 2em 2em;
-   display: flex; 
-   justify-content: center;
-   font-size: 1.3em;
-   text-align: center;
-   color:rgb(255, 255, 255);
- }
-
-.text {
-  color: var(--color2);
-  font-size: 25px;
-  text-align: center;
-  margin: 14px 0;
+.site-container {
+  margin: 8rem auto;
+  max-width: calc(100% - 80px);
 }
-
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container2 {
-  width: 90%;
+ 
+.article-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill ,minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.box {
-  height: 300px; 
-  background:rgb(7, 7, 7);
-  border: 6px solid var(--color2);
-  border-radius: 8px;
-  position: relative;
-  margin: 2em;
+.article-image {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-.box-img {
-  margin: auto auto;
-  max-width: 200px;
-  position: absolute;
-  top: 63%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
 
+.article-card {
+  background: var(--color2);
+  transition: 0.3s;
+  border-radius: 20px;
+  border: var(--color4) solid 3px;
+}
+
+.article-card:hover {
+box-shadow: 0 4px 20px 0 rgba(34,68,123,0.2);
+cursor: pointer;
+}
+
+.article-content {
+  padding: 2rem;
+}
+
+ .card-category {
+  font-size: 0.875rem;
+  color: var(--color4);
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  display: block;
+}
+
+.card-title {
+  margin: 1rem 0;
+  color: rgb(221, 221, 221);
+}
+
+.card-excerpt {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--color4);
+}
+
+@media screen and (min-width: 768px) {
+  .site-container {
+    max-width: 608px;
+  }
+  .article-card {
+    display: grid;
+    grid-template-rows: 220px 1fr;
+    margin-bottom: 4em
+  }
+}
+@media screen and (min-width: 1280px)
+{
+    .site-container {
+      max-width: 1156px;
+    }
 }

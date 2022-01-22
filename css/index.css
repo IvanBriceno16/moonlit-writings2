@@ -1,7 +1,14 @@
+:root {
+  --primary-clr: rgb(5, 37, 6);
+  --color2: rgb(248, 125, 125);
+  --color3: white;
+  --color4: rgb(49, 0, 0);
+}
 
 body {
   margin: 0;
   line-height: 1.6;
+  background: var(--primary-clr);
 }
 
   nav {
@@ -82,7 +89,7 @@ nav .icon-burger .line {
   transition: all .3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   nav .logo {
     float: none;
     width: auto;
@@ -126,7 +133,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
 }
 
 .intro {
-  background:rgb(37, 37, 37);
+  background-color: var(--primary-clr);
 }
 
  img {
@@ -168,7 +175,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
    letter-spacing: 3px;
    font-family: 'Libre Baskerville', serif;
    text-align: left;
-   color: rgb(255, 126, 126);
+   color: var(--color2);
    margin-bottom: 4rem;
    margin-top: 5rem;
  }
@@ -185,7 +192,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
  .primary-text1 {
   font-size: 35px;
   text-align: left;
-  color: rgb(248, 125, 125);
+  color: var(--color2);
   margin-bottom: 1rem;
   
 }
@@ -193,7 +200,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
 .primary-text2 {
   font-size: 35px;
   text-align: center;
-  color: rgb(248, 125, 125);
+  color: var(--color2);
   margin-bottom: 2rem;
   margin-top: 5rem;
  
@@ -214,7 +221,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
   width: 100%;
   overflow-x: hidden;
   font-family: 'Libre Baskerville', serif;
-  background: rgb(37, 37, 37);
+  background: var(--primary-clr);
 }
 
 .container2 {
@@ -304,7 +311,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
   }
   
   .our-topics {
-    background: rgb(37, 37, 37);
+    background: var(--primary-clr);
     color: #eee;
   }
  
@@ -319,7 +326,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
 
   .featured__details {
     text-decoration: none;
-    color: rgb(112, 0, 0);
+    color: var(--color4);
     font-size: 25px;
     text-align: center;
     font-weight: bold;
@@ -329,12 +336,12 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
     padding: 30px 50px;
     font-size: 23px;
     text-align: center;
-    background: rgb(49, 0, 0);
+    background: var(--color4);
     color: #fff;
   }
 
   .product {
-    background: rgb(49, 0, 0);
+    background: var(--color4);
     padding: 3em;
     border-radius: 3em;
     margin-bottom: 12em;
@@ -371,7 +378,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
     }
 
   .blog__box {
-    background: rgb(37, 37, 37);
+    background: var(--primary-clr);
     padding: 3em;
     border-radius: 3em;
     margin-bottom: 5em;

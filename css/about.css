@@ -1,4 +1,11 @@
 
+:root {
+  --primary-clr: rgb(5, 37, 6);
+  --color2: rgb(248, 125, 125);
+  --color3: white;
+  --color4: rgb(49, 0, 0);
+}
+
 body {
   margin: 0;
   line-height: 1.6;
@@ -43,7 +50,7 @@ nav .links {
 nav .links li {
   list-style: none;
   border-radius: 10%;
-  background:-webkit-linear-gradient(transparent 50%, rgb(233, 102, 102));
+  background:-webkit-linear-gradient(transparent 50%, var(--color2));
   background-size: 200px 160px;
   align-items: center; 
   transition: 0.4s;
@@ -83,7 +90,7 @@ nav .icon-burger .line {
   transition: all .3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   nav .logo {
     float: none;
     width: auto;
@@ -127,7 +134,7 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
 }
 
 body {
-  background:rgb(37, 37, 37);
+  background:var(--primary-clr);
 }
 
  .about {
@@ -171,13 +178,13 @@ body {
  }
 
 .title {
-  color:rgb(233, 102, 102);
+  color:var(--color2);
   font-size: 30px;
   margin-bottom: 0px;
 }
 
 .text {
-  color:rgb(233, 102, 102);
+  color:var(--color2);
   font-size: 25px;
   width: 580px
 }
@@ -198,7 +205,7 @@ body {
 }
 
 .product_description {
-  color: rgb(233, 102, 102);
+  color: var(--color2);
   font-size: 20px;
 }
 
@@ -209,7 +216,7 @@ body {
 
 @media (min-width: 40em) {
   .product {
-    text-align: left;
+    text-align: center;
   }
   .product__image {
     float: right;
@@ -224,12 +231,12 @@ body {
 
 .about-me {
   height: 120vh;
-  background: rgb(37, 37, 37);
+  background: var(--primary-clr);
   margin-top: 4em;
 }
 
 .product2 {
-  background: rgb(53, 0, 0);
+  background: var(--color4);
   padding: 3em;
   border-radius: 3em;
   margin-bottom: 12em;
