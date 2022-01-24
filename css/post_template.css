@@ -140,9 +140,9 @@
    }
     
    .container {
-     width: 85%;
+     width: 80%;
      margin: 0 auto;
-     max-width: 65em;
+     max-width: 80em;
    }
 
    .primary-title {
@@ -177,13 +177,14 @@
     }
 
     .content {
-
+        padding: 50px 50px;;
+        background: #f5f5dc;
     }
 
     .heading1 {
-        color: white;
+        color: black;
     }
 
     .text {
-        color: white;
+        color: black;
     }
