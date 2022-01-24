@@ -3,7 +3,14 @@
     --color2: rgb(41, 41, 41);
     --color3: white;
     --color4: rgb(243, 171, 171);
+    --colorblk: rgb(32, 32, 32);
+
+    --fs-xl: 5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
   }
+
   
   body {
     background: var(--primary-clr);
@@ -53,7 +60,6 @@
   nav .links li {
     list-style: none;
     border-radius: 10%;
-    background:-webkit-linear-gradient(transparent 50%, var(--color4));
     background-size: 200px 160px;
     align-items: center; 
     transition: 0.4s;
@@ -109,6 +115,7 @@
       bottom: 100%;
       width: auto;
       height: auto;
+      font-size: 100px;
       flex-direction: column;
       justify-content: space-evenly;
       background-color: rgba(0,0,0,.8);
@@ -116,7 +123,7 @@
       transition: all .5s ease-in-out;
     }
     nav .links a{
-      font-size: 20px;
+      font-size: 30px;
     }
     nav .icon-burger {
       display: block;
@@ -163,7 +170,7 @@
   .hero {
     position: relative;
     margin-top: 0px;
-    color: white;
+    color: var(--color3);
     text-align: center;
     padding: 10em 0;
     background-image: 
@@ -182,9 +189,12 @@
     }
 
     .heading1 {
-        color: black;
+        color: var(--colorblk);
+        font-size: 30px;
     }
 
     .text {
-        color: black;
+        color: var(--colorblk);
+        font-size: 20px;
+        font-weight:inherit;
     }
