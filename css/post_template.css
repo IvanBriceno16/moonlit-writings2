@@ -102,7 +102,7 @@
   }
   
   nav .icon-burger .line {
-    width: 50px;
+    width: 60px;
     height: 10px;
     background-color: #fff;
     margin: 5px;
@@ -148,7 +148,7 @@
       bottom: 0;
     }
     nav :checked ~ .icon-burger .line:nth-child(1) {
-      transform: translateY(10px) rotate(225deg);
+      transform: translateY(18px) rotate(225deg);
     }
   nav :checked ~ .icon-burger .line:nth-child(3) {
     transform: translateY(-10px) rotate(-225deg);
