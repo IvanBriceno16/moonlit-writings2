@@ -4,8 +4,24 @@
   --color2: rgb(41, 41, 41);
   --color3: white;
   --color4: rgb(243, 171, 171);
-}
 
+  --fs-xl: 5rem;
+  --fs-600: 1.5rem;
+  --fs-500: 1rem;
+  --fs-400: 0.8rem;
+}
+  @media (max-width: 1000px) {
+
+    :root {
+      --fs-xl: 5rem;
+      --fs-600: 3.6rem;
+      --fs-500: 3rem;
+      --fs-400: 2.6rem;
+    }
+}
+a:visited {
+  text-decoration: none;
+}
 body {
   background: var(--primary-clr);
   font-family: 'Libre Baskerville', serif;
@@ -171,7 +187,7 @@ cursor: pointer;
 }
 
  .card-category {
-  font-size: 0.875rem;
+  font-size: var(--fs-400);
   color: var(--color4);
   text-decoration:none;
   text-transform: uppercase;
@@ -181,15 +197,21 @@ cursor: pointer;
 }
 
 .card-title {
+  font-size: var(--fs-600);
   margin: 1rem 0;
   color: rgb(221, 221, 221);
 }
 
 .card-excerpt {
   margin: 0;
-  font-size: 1rem;
+  font-size: var(--fs-500);
   line-height: 1.5rem;
   color: var(--color4);
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
