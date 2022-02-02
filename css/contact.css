@@ -51,14 +51,9 @@ nav .links {
 nav .links li {
   list-style: none;
   border-radius: 10%;
-  background:-webkit-linear-gradient(transparent 50%, var(--color2));
   background-size: 200px 160px;
   align-items: center; 
   transition: 0.4s;
-}
-
-nav .links li:hover {
-  background-position: 0 -80px;
 }
 
 nav .links a {

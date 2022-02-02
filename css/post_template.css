@@ -15,7 +15,7 @@
 
       :root {
         --fs-xl: 5rem;
-        --fs-600: 3.5rem;
+        --fs-600: 4rem;
         --fs-500: 3rem;
         --fs-400: 2.3rem;
       }
@@ -161,8 +161,12 @@
     
    .container {
      width: 90%;
+     margin: 5em auto;    
+   }
+
+   .container2 {
+     width: 90%;
      margin: 0 auto;
-    
    }
 
    .primary-title {
@@ -199,6 +203,7 @@
     .content {
         padding: 30px 30px;;
         background: #f5f5dc;
+        margin: 0 auto;
     }
 
     .heading1 {
@@ -210,4 +215,5 @@
         color: var(--colorblk);
         font-size: var(--fs-400);
         font-weight:inherit;
+        height: 50rem;
     }
