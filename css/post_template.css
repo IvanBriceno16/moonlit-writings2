@@ -15,7 +15,7 @@
 
       :root {
         --fs-xl: 5rem;
-        --fs-600: 1.5rem;
+        --fs-600: 3.5rem;
         --fs-500: 3rem;
         --fs-400: 2.3rem;
       }
@@ -166,7 +166,7 @@
    }
 
    .primary-title {
-    font-size: 2.5rem;
+    font-size: var(--fs-600);
     font-size: clamp(3rem, calc(4vw + 1rem), 4rem);
     line-height: 1;
     text-transform: uppercase;
@@ -174,10 +174,10 @@
   }
  
   .primary-text {
-    font-size: 20px;
+    font-size: var(--fs-400);
   }
   section {
-    padding: 7em 0;
+    padding: 4em 0;
   }
 
   .hero {
@@ -197,7 +197,7 @@
     }
 
     .content {
-        padding: 50px 50px;;
+        padding: 30px 30px;;
         background: #f5f5dc;
     }
 

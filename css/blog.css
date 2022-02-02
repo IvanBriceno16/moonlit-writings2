@@ -95,6 +95,10 @@ nav .icon-burger .line {
 }
 
 @media screen and (max-width: 1000px) {
+
+  nav {
+    height: 120px;
+  }
   nav .logo {
     float: none;
     width: auto;
@@ -110,6 +114,7 @@ nav .icon-burger .line {
     bottom: 100%;
     width: auto;
     height: auto;
+    font-size: 100px;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: rgba(0,0,0,.8);
@@ -117,7 +122,7 @@ nav .icon-burger .line {
     transition: all .5s ease-in-out;
   }
   nav .links a{
-    font-size: 20px;
+    font-size: 50px;
   }
   nav .icon-burger {
     display: block;
