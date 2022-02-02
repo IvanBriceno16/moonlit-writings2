@@ -5,7 +5,7 @@
   --color3: white;
   --color4: rgb(243, 171, 171);
 
-  --fs-xl: 5rem;
+  --fs-xl: 3rem;
   --fs-600: 1.5rem;
   --fs-500: 1rem;
   --fs-400: 0.8rem;
@@ -13,8 +13,8 @@
   @media (max-width: 1000px) {
 
     :root {
-      --fs-xl: 5rem;
-      --fs-600: 3.6rem;
+      --fs-xl: 7rem;
+      --fs-600: 3.8rem;
       --fs-500: 3rem;
       --fs-400: 2.6rem;
     }
@@ -147,8 +147,19 @@ nav :checked ~ .icon-burger .line:nth-child(3) {
   }
 }
 
+.primary-title-box {
+  margin-top: 7em;
+  text-align: center;
+}
+
+.primary-title {
+  color: white; 
+  font-size: var(--fs-xl);
+
+}
+
 .site-container {
-  margin: 8rem auto;
+  margin: 3rem auto;
   max-width: calc(100% - 80px);
 }
  
@@ -221,17 +232,23 @@ a:visited {
   .article-card {
     display: grid;
     grid-template-rows: 220px 1fr;
-    margin-bottom: 4em
+    margin-bottom: 4em;
   }
 }
 
 @media (max-width:1000px) {
   .card-excerpt {
-    line-height: 3.5rem;
+    line-height: 3.8rem;
   }
-
   .card-title {
     line-height: 4rem;
+  }
+  .article-card {
+    margin-top: em;
+  }
+  .primary-title {
+    margin-top: 1.5em;
+    
   }
 }
 @media screen and (min-width: 1280px)
