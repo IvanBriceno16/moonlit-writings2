@@ -221,7 +221,7 @@ body {
   max-width: 70%;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 1000px) {
   .product {
     text-align: center;
   }
@@ -234,10 +234,7 @@ body {
   margin-top: var(--spacer, 2rem)
  }
 
-
-
 .about-me {
-  height: 120vh;
   background: var(--primary-clr);
   margin-top: 4em;
 }
