@@ -156,12 +156,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
  .about {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 3rem;
   color: white;
   text-align: center;
   padding: 10em 0;
   background-image: 
-    url(../images/swiss.jpeg),
+    url(../images/indonesia.jpg),
     radial-gradient( rgb(95, 95, 95), #111);
     background-blend-mode: multiply;
   background-size: cover;
