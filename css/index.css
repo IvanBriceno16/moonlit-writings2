@@ -5,18 +5,26 @@
   --color4: rgb(49, 0, 0);
   --color5: rgb(230, 230, 230);
 
-  --fs-xl: 4rem;
-  --fs-600: 3.3rem;
-  --fs-500: 3.6rem;
-  --fs-400: 1.7rem;
+  --fs-xl: 5rem;
+  --fs-650: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
+  --fs-600: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  --fs-550: 40px;
+  --fs-500: 35px;
+  --fs-400: 25px;
+  --fs-300: 20px;
+  --ftdt: 1.7rem;
 }
   @media (max-width: 1000px) {
 
     :root {
-      --fs-xl: 5rem;
-      --fs-600: 4.4rem;
-      --fs-500: 4.9rem;
-      --fs-400: 2.7rem;
+      --fs-xl: 10rem;
+      --fs-650: 6.5rem;
+      --fs-600: 6rem;
+      --fs-550: 60px;
+      --fs-500: 55px;
+      --fs-400: 45px;
+      --fs-300: 40px;
+      --ftdt: 3.7rem;
     }
 }
 
@@ -182,20 +190,22 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
    max-width: 65em;
    margin-bottom: 0;
  }
- .split {
-   display: flex;
-   gap: 1em;
-   flex-wrap: wrap;
-   justify-content: center;
- }
+ .container3 {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1200px;
+  grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
- .split >* {
-   flex-basis: 30%;
-   min-width: 15em;
- }
+@media (max-width: 1000px) {
+  .container3 { grid-template-columns: repeat(1, 1fr); }
+
+}
 
  .primary-title {
-   font-size: 5rem;
+   font-size: var(--fs-xl);
    letter-spacing: 3px;
    font-family: 'Libre Baskerville', serif;
    text-align: left;
@@ -206,7 +216,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
  .primary-text {
   text-align: left;
-   font-size: 25px;
+   font-size: var(--fs-400);
    color: white;
    margin-bottom: 3.5rem;
    max-width: 70%;
@@ -214,7 +224,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
  }
 
  .primary-text1 {
-  font-size: 35px;
+  font-size: var(--fs-500);
   text-align: left;
   color: var(--color2);
   margin-bottom: 1rem;
@@ -222,7 +232,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .primary-text2 {
-  font-size: 35px;
+  font-size: var(--fs-500);
   text-align: center;
   color: var(--color2);
   margin-bottom: 2rem;
@@ -231,7 +241,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .primary-text3 {
-  font-size: 25px;
+  font-size: var(--fs-400);
   text-align: center;
   color: rgb(255, 255, 255);
   margin-bottom: 0;
@@ -271,7 +281,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 .text {
   color: #fff;
   margin: 0;
-  font-size: 40px;
+  font-size: var(--fs-550);
   width: 100%;
   text-align: center;
   position: absolute; 
@@ -298,19 +308,25 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
  .section-title {
    text-align: center;
-   font-size: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
-   line-height: 5rem;
+   font-size: var(--fs-600);
+   line-height: 8rem;
    margin-bottom: 5rem;
    color: #fff;
    font-family: 'Libre Baskerville', serif;
   font-weight: 300;
   letter-spacing: 2px;
  }
+ .section-title2 {
+  text-align: center;
+  font-size: var(--fs-650);
+  line-height: 8rem;
+  margin-bottom:5rem;
+  color: #fff;
+  margin-top: -18px;
+}
 
   .featured {
     background-color: rgb(48, 48, 48);
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .featured__item {
@@ -321,6 +337,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     border: 8px solid rgb(0, 0, 0);
     text-decoration: none;
     background: rgb(0, 0, 0);
+    overflow: hidden;
   }
 
   .featured__item:hover {
@@ -328,29 +345,21 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   } 
 
   .featured__img {
-   max-height: 250px;
-   min-height: 250px;
+    width: auto;
+   height: auto;
   } 
-  .section-title2 {
-    text-align: center;
-    font-size: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
-    line-height: 1;
-    margin-bottom:5rem;
-    color: #fff;
-    margin-top: -18px;
-  }
 
   .featured__details {
     text-decoration: none;
     color: var(--color3);
-    font-size: 25px;
+    font-size: var(--ftdt);
     text-align: center;
     text-shadow: 0 0 .1em, 0 0 .6em;
   }
 
   .text2 {
     padding: 30px 50px;
-    font-size: 23px;
+    font-size: var(--fs-300);
     text-align: center;
     background: var(--color4);
     color: #fff;
@@ -365,12 +374,16 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   .product__title {
-    font-size: 4rem;
-    line-height: 1.1;
+    font-size: var(--fs-600);
+    line-height: 1;
   }
 
   .product__image {
-    margin: -5em 0 0 0;
+    margin: -5em -5em 0 0;
+  }
+
+  .product_description {
+    font-size:var(--fs-300);
   }
 
   @media (min-width: 40em) {
