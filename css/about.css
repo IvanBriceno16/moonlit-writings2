@@ -5,6 +5,20 @@
   --color3: white;
   --color4: rgb(49, 0, 0);
   --color5: rgb(43, 43, 43);
+
+  --fs-xl: 3.5rem;
+  --fs-600: 3.3rem;
+  --fs-500: 3.6rem;
+  --fs-400: 1.7rem;
+}
+  @media (max-width: 1000px) {
+
+    :root {
+      --fs-xl: 5rem;
+      --fs-600: 4.4rem;
+      --fs-500: 4.9rem;
+      --fs-400: 2.7rem;
+    }
 }
 
 body {
@@ -169,8 +183,7 @@ body {
 
  .primary-title {
    color: white;
-   font-size: 4rem;
-   
+   font-size: var(--fs-xl);
    letter-spacing: 3px;
  }
 
@@ -178,23 +191,11 @@ body {
    margin: 5rem 2em 1em;
    display: flex; 
    justify-content: center;
-   font-size: 3em;
+   font-size: var(--fs-600);
    color:rgb(233, 233, 233);
    text-align: center;
    
  }
-
-.title {
-  color:var(--color2);
-  font-size: 30px;
-  margin-bottom: 0px;
-}
-
-.text {
-  color:var(--color2);
-  font-size: 25px;
-  width: 580px
-}
 
 .product {
   background: var(--color5);
@@ -205,7 +206,7 @@ body {
 }
 
 .product__title {
-  font-size: 3.8rem;
+  font-size: var(--fs-500);
   line-height: 1.1;
   color: white;
   text-shadow: 0 0 .1em, 0 0 .6em;
@@ -213,7 +214,7 @@ body {
 
 .product_description {
   color: var(--color2);
-  font-size: 20px;
+  font-size: var(--fs-400);
 }
 
 .product__image {
@@ -248,7 +249,7 @@ body {
 }
 
 .product__title2 {
-  font-size: 3.8rem;
+  font-size: var(--fs-500);
   line-height: 1.1;
   color: white;
   text-shadow: 0 0 .1em, 0 0 .6em;
@@ -257,7 +258,7 @@ body {
 
 .product_description2 {
   color: rgb(219, 219, 219);
-  font-size: 20px;
+  font-size: var(--fs-400);
   text-align: center;
 }
 
@@ -281,7 +282,7 @@ body {
   margin-bottom: 1.5em;
   display: flex; 
   justify-content: center;
-  font-size: 3em;
+  font-size: var(--fs-600);
   color:rgb(245, 245, 245);
   text-align: center;
 }
