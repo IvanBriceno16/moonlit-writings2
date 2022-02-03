@@ -1,12 +1,12 @@
 
 :root {
   --primary-clr: rgb(17, 17, 17);
-  --color2: rgb(248, 125, 125);
-  --color3: white;
+  --color2: rgb(255, 199, 199);
+  --color3: rgb(238, 238, 238);
   --color4: rgb(49, 0, 0);
   --color5: rgb(43, 43, 43);
 
-  --fs-xl: 3.5rem;
+  --fs-xl: 4rem;
   --fs-600: 3.3rem;
   --fs-500: 3.6rem;
   --fs-400: 1.7rem;
@@ -163,7 +163,7 @@ body {
   margin-top: 5rem;
   color: white;
   text-align: center;
-  padding: 10em 0;
+  padding: 8em 0;
   background-image: 
     url(../images/swiss.jpeg),
     radial-gradient( rgb(95, 95, 95), #111);
@@ -201,6 +201,7 @@ body {
   background: var(--color5);
   padding: 3em;
   border-radius: 3em;
+  border: 3px solid var(--color2) ;
   margin-bottom: 6em;
   text-align: center;
 }
@@ -208,7 +209,7 @@ body {
 .product__title {
   font-size: var(--fs-500);
   line-height: 1.1;
-  color: white;
+  color: var(--color3);
   text-shadow: 0 0 .1em, 0 0 .6em;
 }
 
@@ -218,8 +219,9 @@ body {
 }
 
 .product__image {
-  margin: auto 1em;
+  margin: .5em .8em;
   max-width: 70%;
+  border-radius: 10px;
 }
 
 @media (min-width: 1000px) {
@@ -251,7 +253,7 @@ body {
 .product__title2 {
   font-size: var(--fs-500);
   line-height: 1.1;
-  color: white;
+  color: var(--color3);
   text-shadow: 0 0 .1em, 0 0 .6em;
   text-align: center;
 }
@@ -268,7 +270,7 @@ body {
   float: center;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 1000px) {
   .product2 {
     text-align: left;
   }
