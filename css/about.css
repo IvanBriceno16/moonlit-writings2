@@ -1,9 +1,10 @@
 
 :root {
-  --primary-clr: rgb(5, 37, 6);
+  --primary-clr: rgb(17, 17, 17);
   --color2: rgb(248, 125, 125);
   --color3: white;
   --color4: rgb(49, 0, 0);
+  --color5: rgb(43, 43, 43);
 }
 
 body {
@@ -196,7 +197,7 @@ body {
 }
 
 .product {
-  background: rgb(17, 17, 17);
+  background: var(--color5);
   padding: 3em;
   border-radius: 3em;
   margin-bottom: 6em;

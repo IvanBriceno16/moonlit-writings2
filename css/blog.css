@@ -160,6 +160,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 .primary-title-box {
   margin-top: 7em;
   text-align: center;
+  margin-bottom: 4em;
 }
 
 .primary-title {
@@ -176,8 +177,8 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
  
 .article-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill ,minmax(400px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fill ,minmax(390px, 1fr));
+  gap: 4rem;
 }
 
 .article-image {

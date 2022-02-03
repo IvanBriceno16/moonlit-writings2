@@ -292,7 +292,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   .featured {
     /*background-image: url("images/nightsky.jpeg");
     background-size: 112%;*/
-    background-color: rgb(66, 66, 66);
+    background-color: rgb(48, 48, 48);
     display: flex;
     flex-wrap: wrap;
   }
@@ -332,7 +332,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
   .featured__details {
     text-decoration: none;
-    color: var(--color4);
+    color: var(--primary-clr);
     font-size: 25px;
     text-align: center;
     font-weight: bold;
