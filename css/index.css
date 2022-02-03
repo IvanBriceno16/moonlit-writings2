@@ -19,7 +19,7 @@
     :root {
       --fs-xl: 10rem;
       --fs-650: 6.5rem;
-      --fs-600: 6rem;
+      --fs-600: 5.4rem;
       --fs-550: 60px;
       --fs-500: 55px;
       --fs-400: 45px;
@@ -310,7 +310,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
    text-align: center;
    font-size: var(--fs-600);
    line-height: 8rem;
-   margin-bottom: 5rem;
+   margin: 1rem 40px 5rem 40px;
    color: #fff;
    font-family: 'Libre Baskerville', serif;
   font-weight: 300;
