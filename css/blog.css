@@ -218,6 +218,15 @@ cursor: pointer;
   letter-spacing: 0.1em;
   display: block;
 }
+.card-date {
+  font-size: var(--fs-400);
+  color: var(--color4);
+  text-decoration:none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  display: block;
+}
 
 .card-title {
   font-size: var(--fs-600);

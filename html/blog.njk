@@ -1,0 +1,48 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+  <head>
+    <link href="/css/blog.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <div class="primary-title-box">
+    <h1 class="primary-title">Essays</h1>
+  </div>
+
+  <div class="site-container">
+    <div class="article-container">
+
+      {%- for post in collections.post -%}
+        <article class="article-card">
+        <figure class="article-image">{{ post.data.image }}</figure>
+        <div class="article-content">
+          <a href="/blog/on-the-geneo.md" class="card-category">{{ post.data.category }}</a>
+          <a href="/html/template.html" class="card-date">{{ post.data.date }}</a>
+          <a class="none" href="/blog/on-the-geneo.md"><h3 class="card-title">{{ post.data.title }}</h3></a>
+          <a class="none" href="/html/template.html"><p class="card-excerpt">{{ post.data.description }}</p></a>
+        </div>
+        </article>
+      {%- endfor %}
+
+    </div>
+  </div>
+
+  {# 
+    <article class="article-card">
+        <figure class="article-image">
+          <a href="/html/template.html"> <img src="../images/ethics2.jpeg" alt="city" /></a>
+        </figure>
+        <div class="article-content">
+          <a href="/html/template.html" class="card-category">Philosophy</a>
+          <a href="/html/template.html" class="card-date">Feb 11, 2022</a>
+          <a class="none" href="/html/template.html"> <h3 class="card-title">On The Geneology of Morality</h3></a>
+          <a class="none" href="/html/template.html"><p class="card-excerpt">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Non eligendi explicabo obcaecati sunt odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempora adipisci veritatis sequi nisi. Voluptates, veritatis. Aut soluta iure optio molestias?</p></a>
+        </div>
+      </article>#}
+  
+    
+
+  
