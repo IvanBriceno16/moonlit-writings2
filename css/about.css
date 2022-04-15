@@ -9,7 +9,7 @@
   --fs-xl: 4rem;
   --fs-600: 3.3rem;
   --fs-500: 3.6rem;
-  --fs-400: 1.7rem;
+  --fs-400: 1.6rem;
 }
   @media (max-width: 1000px) {
 
@@ -160,10 +160,10 @@ body {
 
  .about {
   position: relative;
-  margin-top: 3rem;
+  margin-top: 5rem;
   color: white;
   text-align: center;
-  padding: 10em 0;
+  padding: 8em 0;
   background-image: 
     url(../images/indonesia.jpg),
     radial-gradient( rgb(95, 95, 95), #111);
@@ -172,7 +172,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  max-height: 30vh;
   }
   
  .container {
@@ -202,7 +201,7 @@ body {
   background: var(--color5);
   padding: 3em;
   border-radius: 3em;
-  border: 3px solid var(--color2) ;
+  
   margin-bottom: 6em;
   text-align: center;
 }

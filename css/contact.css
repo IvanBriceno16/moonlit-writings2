@@ -197,6 +197,15 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   font-size: var(--fs-400);
   text-align: center;
   margin: 14px 0;
+  text-decoration: none;
+}
+
+.text2 {
+  color: var(--color3);
+  font-size: var(--fs-400);
+  text-align: center;
+  margin: 14px 0;
+  text-decoration: none;
 }
 
 .contact {

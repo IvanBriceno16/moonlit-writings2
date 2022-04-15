@@ -1,10 +1,34 @@
----
-title: Home
-layout: 'base.njk'
----
+<!DOCTYPE html>
+
+<html>
   <head>
-    <link href="/css/index.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="mw-home3.js"></script>
+    <title>Mock #4</title>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
   </head>
+
+<body>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo"><a class="logo" href="/index.html">MW</a></div>
+    <ul class="links">
+      <li><a href="./html/about.html">About</a></li>
+      
+      <li><a href="./html/blog.html">Essays</a></li>
+      <li><a href="./html/contact.html">Contact</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
 
   <section class="intro">
     <div class="container">
@@ -62,32 +86,33 @@ layout: 'base.njk'
       </script>
 
   </section>
+    <main>
       <section class="featured">
-        <h2 class="section-title">We'll be discussing topics such as...</h2>
-        <div class="container3">
-
+        <div class="container">
+          <h2 class="section-title">We'll be discussing topics such as...</h2>
+          <div class="split">
             <a href="#" class="featured__item">
-              <img src="/images/socrates4.jpeg" alt="pantheon" class="featured__img">
+              <img src="images/pantheon.jpeg" alt="pantheon" class="featured__img">
               <p class="featured__details">Philosophy</p>
             </a>
             <a href="#" class="featured__item">
-              <img src="/images/literature2.jpeg" alt="" class="featured__img">
+              <img src="images/literature.jpeg" alt="" class="featured__img">
               <p class="featured__details">Literature</p>
             </a>
             <a href="#" class="featured__item">
-              <img src="/images/liberty3.png" alt="" class="featured__img">
+              <img src="images/liberty.jpg" alt="" class="featured__img">
               <p class="featured__details">History</p>
             </a>
             <a href="#" class="featured__item">
-              <img src="/images/art3.jpeg" alt="" class="featured__img">
+              <img src="images/monet.jpeg" alt="" class="featured__img">
               <p class="featured__details">Art</p>
             </a>
             <a href="#" class="featured__item">
-              <img src="/images/un.jpeg" alt="" class="featured__img">
+              <img src="images/world.jpeg" alt="" class="featured__img">
               <p class="featured__details">World Politics</p>
             </a>
             <a href="#" class="featured__item">
-              <img src="/images/map.jpeg" alt="" class="featured__img">
+              <img src="images/map.jpeg" alt="" class="featured__img">
               <p class="featured__details">Cultures</p>
             </a>
           </div>
@@ -106,8 +131,8 @@ layout: 'base.njk'
           </article>
 
           <article class="product spacing">
-            <img src="images/nietzsche2.png" alt="" class="product__image">
-            <h3 class="product__title">Nietzsche</h3>
+            <img src="images/marcuse2.png" alt="" class="product__image">
+            <h3 class="product__title">Herbet Marcuse</h3>
             <p class="product_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt quidem eos aut temporibus obcaecati qui voluptatibus dolore perferendis mollitia rem. Quasi unde dolorem iure numquam!</p>
           </article>
 
@@ -125,20 +150,19 @@ layout: 'base.njk'
       </div>
       <section class="blog">
         <div class="container">
-          <h2 class=blog-title>Check out my Essays</h2>
+          <h2 class=section-title>Check out my blog</h2>
 
           <div class="blog__box spacing">
             <p class="blog__details">
-              I like to summarize my readings into comprehensive essays so that I retain what I've read and I can start to formulate
-              my thoughts. I've noticed that reading leads to a sort of spider-web of thoughts and ideas that all relate to on another 
-              and eventually tie into eachother which further strengthen your understanding of a subject. These will be the goal of my essays.
-         
+              In my blog, I'll be giving useful tips that I've been learning when it comes to writing and reading
+              I'll also be writing about random thoughts that pop up into my head. I don't know they're kinda weird. 
             </p>
           </div>
         </div>
       </section>
-
-
+    </main>
+  </body>
+  </html>
     
 
   

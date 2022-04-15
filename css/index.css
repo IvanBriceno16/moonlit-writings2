@@ -7,11 +7,11 @@
 
   --fs-xl: 5rem;
   --fs-650: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
-  --fs-600: clamp(2.5rem, calc(5vw + 1rem), 4.3rem);
+  --fs-600: clamp(2.5rem, calc(5vw + 1rem), 4rem);
   --fs-550: 40px;
   --fs-500: 35px;
   --fs-400: 25px;
-  --fs-300: 23px;
+  --fs-300: 20px;
   --ftdt: 1.7rem;
 }
   @media (max-width: 1000px) {
@@ -19,7 +19,7 @@
     :root {
       --fs-xl: 10rem;
       --fs-650: 6.5rem;
-      --fs-600: 5.4rem;
+      --fs-600: 6rem;
       --fs-550: 60px;
       --fs-500: 55px;
       --fs-400: 45px;
@@ -309,22 +309,30 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
  .section-title {
    text-align: center;
    font-size: var(--fs-600);
-   line-height: 7rem;
-   margin: 0rem 40px 4rem 40px;
+   line-height: 8rem;
+   margin-bottom: 5rem;
    color: #fff;
    font-family: 'Libre Baskerville', serif;
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
  }
  .section-title2 {
   text-align: center;
   font-size: var(--fs-650);
   line-height: 8rem;
-  margin-bottom:0;
+  margin-bottom:5rem;
   color: #fff;
   margin-top: -18px;
 }
 
+.section-title3 {
+  text-align: center;
+  font-size: var(--fs-600);
+  line-height: 6rem;
+  margin-bottom:5rem;
+  color: #fff;
+  margin-top: -18px;
+}
   .featured {
     background-color: rgb(48, 48, 48);
   }
@@ -364,6 +372,14 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     background: var(--color4);
     color: #fff;
   }
+  .blog_title {
+    color: var(--color3);
+    font-size: var(--fs-400);
+    text-align: center;
+    margin-top: -50px;;
+    padding: 2rem;
+    
+  }
 
   .product {
     background: var(--color4);
@@ -395,42 +411,59 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
       width: 47%;
     }
   }
-  .blog {
-    background-image: 
-      url(/images/nightsky.jpeg),
-      radial-gradient( rgb(49, 49, 49), #111);
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    }
 
-    .blog-title {
-      text-align: center;
-      font-size: var(--fs-600);
-      margin: 0rem 40px 3rem 40px;
-      color: #fff;
-      font-family: 'Libre Baskerville', serif;
-     font-weight: 300;
-     letter-spacing: 1px;
-    }
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container4 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px, 1fr));
+    grid-gap: 30px;
+  }
+  .box {
+    height: auto; 
+    background:rgb(0, 0, 0);
+    border: 3px solid var(--color2);
+    border-radius: 20px;
+    position: relative;
+    margin: 1em;
+    margin-bottom: 3em;
+    padding: 3rem;
+  }
 
-  .blog__box {
-    background: var(--primary-clr);
-    padding: 3em;
-    border-radius: 3em;
-    margin-bottom: 0;
+  .blog_text {
+    font: 14px;
+    color: white;
     text-align: center;
   }
 
-  .blog__details {
-    color: #fff;
-    font-size: var(--fs-300);
-    line-height: 2.5rem;
+  .primary-text4 {
+    font-size: var(--fs-500);
+    text-align: center;
+    color: var(--color2);
+    margin-bottom: 2rem;
+    
   }
-  @media (max-width: 1000px) {
-    .blog__details {
-      line-height: 6rem;
+  
+  .primary-text5 {
+    font-size: var(--fs-400);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+    font-family: 'Libre Baskerville', serif;
+    max-width: 130%;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .box {
+      display: grid;
+      grid-template-rows: 220px 2fr;
+      margin-bottom: 4em;
+    }
+    .contact{
+      max-width: 1008px;
     }
   }
