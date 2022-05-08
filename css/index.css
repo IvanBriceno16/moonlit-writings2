@@ -466,4 +466,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     .contact{
       max-width: 1008px;
     }
+    .primary-text5 {
+      margin-top: 0px;
+    }
   }
