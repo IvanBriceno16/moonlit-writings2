@@ -469,4 +469,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     .primary-text5 {
       margin-top: 0px;
     }
+    .primary-text4 {
+      margin-bottom: 0px;
+    }
   }
