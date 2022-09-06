@@ -328,7 +328,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 .section-title3 {
   text-align: center;
   font-size: var(--fs-600);
-  line-height: 6rem;
+  line-height: 8rem;
   margin-bottom:5rem;
   color: #fff;
   margin-top: -18px;
@@ -458,7 +458,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   @media screen and (max-width: 1000px) {
     .box {
       display: grid;
-      grid-template-rows: 220px 2fr;
+      grid-template-rows: 120px 2fr;
       margin-bottom: 2em;
     }
     .contact{
