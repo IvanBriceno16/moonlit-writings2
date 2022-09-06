@@ -1,9 +1,9 @@
 
 :root {
   --primary-clr: rgb(17, 17, 17);
-  --color2: rgb(41, 41, 41);
-  --color3: white;
-  --color4: rgb(243, 171, 171);
+  --color2: rgb(49, 0, 0);
+  --color3: rgb(243,171,171);
+  --color4: rgb(247, 247, 247);
 
   --fs-xl: 3rem;
   --fs-600: 1.5rem;
@@ -197,7 +197,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   background: var(--color2);
   transition: 0.3s;
   border-radius: 20px;
-  border: var(--color4) solid 3px;
 }
 
 .article-card:hover {
@@ -211,7 +210,7 @@ cursor: pointer;
 
  .card-category {
   font-size: var(--fs-400);
-  color: var(--color4);
+  color: var(--color3);
   text-decoration:none;
   text-transform: uppercase;
   font-weight: 600;
@@ -222,7 +221,7 @@ cursor: pointer;
 .card-title {
   font-size: var(--fs-600);
   margin: 1rem 0;
-  color: rgb(221, 221, 221);
+  color: var(--color4);
 }
 
 .card-excerpt {

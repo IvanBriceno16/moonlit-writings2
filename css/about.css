@@ -2,7 +2,7 @@
 :root {
   --primary-clr: rgb(17, 17, 17);
   --color2: rgb(255, 199, 199);
-  --color3: rgb(238, 238, 238);
+  --color3: rgb(240, 240, 240);
   --color4: rgb(49, 0, 0);
   --color5: rgb(43, 43, 43);
 
@@ -198,10 +198,9 @@ body {
  }
 
 .product {
-  background: var(--color5);
+  background: var(--color4);
   padding: 3em;
   border-radius: 3em;
-  
   margin-bottom: 6em;
   text-align: center;
 }
@@ -214,7 +213,7 @@ body {
 }
 
 .product_description {
-  color: var(--color2);
+  color: var(--color3);
   font-size: var(--fs-400);
 }
 
