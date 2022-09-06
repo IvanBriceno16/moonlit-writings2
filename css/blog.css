@@ -16,7 +16,7 @@
       --fs-xl: 7rem;
       --fs-600: 3.8rem;
       --fs-500: 3rem;
-      --fs-400: 2.6rem;
+      --fs-400: 2rem;
     }
 }
 
@@ -245,10 +245,11 @@ cursor: pointer;
 
 @media (max-width:1000px) {
   .card-excerpt {
-    line-height: 3.8rem;
+    line-height: 4.1rem;
   }
   .card-title {
-    line-height: 4rem;
+    line-height: 5rem;
+    margin-bottom: 2.7rem;
   }
   .primary-title {
     margin-top: 1.5em;
