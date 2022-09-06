@@ -5,6 +5,7 @@
   --color4: rgb(49, 0, 0);
   --color5: rgb(230, 230, 230);
 
+  --fs-700: clamp(2.5rem, calc(5vw + 1rem), 4rem);
   --fs-xl: 5rem;
   --fs-650: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
   --fs-600: clamp(2.5rem, calc(5vw + 1rem), 4rem);
@@ -17,6 +18,7 @@
   @media (max-width: 1000px) {
 
     :root {
+      --fs-700: 5rem;
       --fs-xl: 10rem;
       --fs-650: 6.5rem;
       --fs-600: 6rem;
@@ -391,6 +393,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     font-size: var(--fs-600);
     line-height: 1;
   }
+  .product__title2 {
+    font-size: var(--fs-700);
+    line-height: 1;
+  }
 
   .product__image {
     margin: -5em -5em 0 0;
@@ -402,10 +408,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     font-size:var(--fs-300);
   }
 
-  @media (max-width: 1000px) {
+  @media screen and (max-width: 1000px) {
    
     .product__image {
-      width: 42%;
+      width: 45%;
     }
   }
 
