@@ -384,7 +384,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     padding: 3em;
     border-radius: 3em;
     margin-top: 9em;
-    text-align: center;
+    text-align: left;
   }
 
   .product__title {
@@ -394,19 +394,18 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
   .product__image {
     margin: -5em -5em 0 0;
+    width: 47%;
+    float: right;
   }
 
   .product_description {
     font-size:var(--fs-300);
   }
 
-  @media (min-width: 40em) {
-    .product {
-      text-align: left;
-    }
+  @media (max-width: 1000px) {
+   
     .product__image {
-      float: right;
-      width: 45%;
+      width: 42%;
     }
   }
 
